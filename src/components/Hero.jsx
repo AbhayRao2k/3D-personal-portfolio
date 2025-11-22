@@ -2,12 +2,14 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import useIsSmallScreen from "./useIsSmallScreen";
 
 const Hero = () => {
+  const isSmall = useIsSmallScreen(600);
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       {/* Video Background */}
-      <video 
+      <video
         className="absolute top-0 left-0 w-full h-full object-cover z-[-2] brightness-[0.25]"
         autoPlay
         muted
@@ -17,7 +19,7 @@ const Hero = () => {
         <source src="/assets/herobg.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      
+
       {/* Overlay to control video brightness/opacity */}
       <div className="absolute top-0 left-0 w-full h-full bg-primary opacity-10 z-[-1]"></div>
 
@@ -41,7 +43,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      
+        {isSmall ? (
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">⚠️ Unable to load this 3D model on smaller devices. Please use a Desktop or Firefox browser</div>
+        ) : (
+          <ComputersCanvas />
+        )}
+      
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
