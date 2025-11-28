@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 
 import mockxpert from "./mockxpert.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import stoxbase from "./stoxbase.png";
 
 export {
   logo,
@@ -60,5 +60,5 @@ export {
   tesla,
   mockxpert,
   jobit,
-  tripguide,
+  stoxbase,
 };

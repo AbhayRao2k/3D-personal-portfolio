@@ -15,7 +15,7 @@ import {
   figma,
   mockxpert,
   jobit,
-  tripguide,
+  stoxbase,
 } from "../assets";
 
 export const navLinks = [
@@ -39,12 +39,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
     title: "Backend Developer",
     icon: backend,
+  },
+  {
+    title: "React Native Developer",
+    icon: mobile,
   },
   {
     title: "Video Editor",
@@ -119,6 +119,29 @@ const projects = [
     live_demo_link: "https://mockxpert-ai-interviews.vercel.app/",
   },
   {
+    name: "Stoxbase - Stock Market Platform",
+    description:
+      "A web application that provides real-time stock market data, including stock prices, volumes, and other relevant information.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: stoxbase,
+    source_code_link:
+      "https://github.com/AbhayRao2k/Real-time-stocks-app.git",
+    live_demo_link: "https://stoxbase.vercel.app/",
+  },
+  {
     name: "Job Hunter App",
     description:
       "Web application that allows users to search and apply for jobs, post new openings, view estimated salary ranges, and find opportunities based on their location.",
@@ -139,25 +162,6 @@ const projects = [
     image: jobit,
     source_code_link: "https://github.com/AbhayRao2k/Job-Portal-App-MERN.git",
     live_demo_link: "https://job-hunter-app-pro.vercel.app/",
-  },
-  {
-    name: "Reeltime Max",
-    description:
-      "Mobile application built with React Native that lets users browse and search movies, view detailed information, and watch trailers in an intuitive and responsive interface.",
-    tags: [
-      {
-        name: "reactnative",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link:
-      "https://github.com/AbhayRao2k/Movie-App-React-Native.git",
-    live_demo_link: "https://github.com/AbhayRao2k/Movie-App-React-Native.git",
   },
 ];
 
